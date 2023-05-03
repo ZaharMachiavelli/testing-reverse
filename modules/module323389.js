@@ -4,7 +4,9 @@ export default _module323389 = {
     validateWid: validateWid,
 }
 
-
+// Из контекста функции можно было вывести тип данных для аргумента "e", привожу пример
+// null == e -> аргумент "e" может быть необязательным (undefined) или null, можно ограничиться undefined
+// e.match(/(.*)@(.*)/) -> match есть в прототипе String -> аргумент "e" может быть строчкой
 function validateAndGetParts(e) {
     if (null == e)
         return null;

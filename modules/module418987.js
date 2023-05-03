@@ -590,5 +590,6 @@ function generateModule() {
     }
 }
 
+//Можно было просто эскпортировать функции из файла
 generateModule();
 export default module418987;
